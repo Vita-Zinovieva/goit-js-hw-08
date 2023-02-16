@@ -33,11 +33,10 @@ function onFormSubmit(event){
 
 function dataLocalStorage() {
    const savedData = JSON.parse(localStorage.getItem(STOREGE_KEY));
-   //console.log(savedData);
-    if (savedData) {
-      email.value = savedData.email;
-      message.value = savedData.message; 
-    }
+   
+     if (savedData) {
+      console.log(savedData);
+    } 
   }; 
 
 
